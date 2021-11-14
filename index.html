@@ -11,32 +11,37 @@
 <body>
     <div class="container">
         <div class="weather-section">
-            <h1>
-                Sydney
-            </h1>
-            <ul>
-                <li>
-                    Sunday 
-                </li>
-                <li>
-                    9:37 pm 
-                </li>
+            <div class="overview">
+                <h1>
+                    Sydney
+                </h1>
+                <ul>
+                    <li>
+                        Sunday 
+                    </li>
+                    <li class="current-time">
+                        9:37 pm 
+                    </li>
+            </div>
             </ul>
             <div class="row">
                 <div class="col-6">
-                    <img src="https://www.ecosia.org/images?q=sunny%20icon%20image#id=F64DAF9D4A6249C70F666B9DB43415297CB4D2A2" alt="weath-icon">
+                    <div class="weather-icon">
+                        <img src="https://www.ecosia.org/images?q=sunny%20icon%20image#id=F64DAF9D4A6249C70F666B9DB43415297CB4D2A2" alt="weath-icon">
+                        <span class="weather-temp"> <strong>15</strong> <span class="unit"> ℃</span> </span>
+                    </div>
                 </div>
                 <div class="col-6">
-                    15℃ 
-                    <ul>
+                    <ul class="pronostic">
                         Clear
                     </ul>
                 </div>
             </div>
-        </div>
             <small>
                 <a href="https://github.com/astrid595/The-app" target="_blank">Open source code</a>, by Astrid VU
-            </small>  
+            </small> 
+        </div>
+ 
     </div>
     <script src= "src/app.js"></script>
 </body>

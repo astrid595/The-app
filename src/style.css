@@ -1,3 +1,59 @@
+.weather-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    background-color: #ebcda893;
+    border-radius: 12px;
+}
+
 h1 {
-    color: blueviolet;
+    font-family: "Franklin Gothic Medium";
+    font bold;
+}
+
+ul {
+    color: #9f9a94;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    color: #666462;
+    font-family: "Franklin Gothic Medium";
+    font: bold;
+    font-size: 24px;
+}
+
+.overview {
+    margin-bottom: 20px;
+}
+
+.current-time {
+    font-size: 15px;
+}
+
+.pronostic {
+    font-size: 40px;
+    font-weight: 500px;
+}
+
+.weather-icon img {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.weather-temp strong{
+    font-size: 35px;
+    color: #666462;
+    line-height: 1;
+}
+
+.weather-temp .unit {
+    color: #666462;
+    position: relative;
+    font-size: 16px;
+    top: -12px;
 }
