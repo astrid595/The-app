@@ -22,9 +22,11 @@ h2 {
 
 li {
     list-style: none;
-    text-transform: capitalize;
 }
 
+li:first-letter{
+    text-transform: capitalize;
+}
 
 .pronostic {
     color: rgba(128, 119, 119, 0.877);
