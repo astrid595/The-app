@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    color: #7a7777;
+    color: rgb(99, 95, 95);
 }
 
 li {
@@ -25,7 +25,17 @@ li {
 }
 
 .pronostic {
-color: rgba(128, 119, 119, 0.877);
-font: bolder;
+    color: rgba(128, 119, 119, 0.877);
+    font: bolder;
 }
 
+.degrees {
+    color: rgb(99, 95, 95);
+    font-size: 50px;
+}
+
+.unit {
+    position: relative;
+    font-size: 15px;
+    top: -20px;
+}
