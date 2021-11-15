@@ -22,11 +22,17 @@ h2 {
 
 li {
     list-style: none;
+    text-transform: capitalize;
 }
+
 
 .pronostic {
     color: rgba(128, 119, 119, 0.877);
     font: bolder;
+}
+
+img {
+    width: 100px;
 }
 
 .degrees {
