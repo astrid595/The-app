@@ -50,3 +50,8 @@ img {
     font-size: 15px;
     top: -20px;
 }
+
+.weather-app-wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+}
