@@ -20,7 +20,6 @@ function formatDate(timestamp) {
     ];
     let day = days[date.getDay()];
     return `${day}`;
-
   }
   
   function displayTemperature(response) {
@@ -56,8 +55,5 @@ function formatDate(timestamp) {
     let cityInputElement = document.querySelector("#city-input").value;
     search(cityInputElement);
   }
-  
-  let form = document.querySelector("#search-form");
-  form.addEventListener("submit", handleSubmit);
-  
+
   search("Sydney");
