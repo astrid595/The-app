@@ -19,7 +19,7 @@ function formatDate(timestamp) {
       "Saturday",
     ];
     let day = days[date.getDay()];
-    return `${day}`;
+    return `${day}, ${hours}:${minutes}`;
   }
   
   function displayTemperature(response) {
@@ -31,6 +31,12 @@ function formatDate(timestamp) {
   
     let conditionElement = document.querySelector("#condition");
     conditionElement.innerHTML = response.data.weather[0].description;
+
+    let humidityElement = document.querySelector("#humidity");
+    humidityElement.innerHTML = response.data.main.humidity;
+
+    let windElement = document.querySelector("#wind");
+    windElement.innerHTML = Math.round(response.data.wind.speed);
   
     let dateElement = document.querySelector("#date");
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
@@ -46,7 +52,7 @@ function formatDate(timestamp) {
   function search(city) {
     let apiKey = "c8116d2b99630d13abef344e372457d3";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  
+    
     axios.get(apiUrl).then(displayTemperature);
   }
   
@@ -55,5 +61,8 @@ function formatDate(timestamp) {
     let cityInputElement = document.querySelector("#city-input").value;
     search(cityInputElement);
   }
-
-  search("Sydney");
+  
+  let form = document.querySelector("#search-form");
+  form.addEventListener("submit", handleSubmit);
+  
+  search("London");

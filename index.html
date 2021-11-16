@@ -41,8 +41,9 @@
                                     </div>
                                     <div class="col-3">
                                         <button
+                                        type="submit"
                                         class="form-control shadow border-0"
-                                        id="current-location-button"
+                                        id="location"
                                         >
                                         Current
                                         </button>
@@ -53,11 +54,12 @@
 
 
                     <h1 id="city">
-                        <span id="current-date">Sydney</span>
-                    </h1>, 
+                        Sydney
+                    </h1> 
                     
-                    <h2 id="date">
-                        Monday
+                    <h2 class="date">
+                        Last updated:
+                        <span id="date">Monday 03:03</span> 
                     </h2>
                 
                 </ul>
@@ -65,11 +67,14 @@
                     <div class="col-6">
                         <span class="pronostic">
                             <ul>
-                                <li id="time">
-                                    11:31
-                                </li>
                                 <li id="condition">
                                     Clear
+                                </li>
+                                <li>
+                                    Humidity: <span id="humidity">%</span>
+                                </li>
+                                <li>
+                                    Wind: <span id="wind"></span> km/h
                                 </li>
                             </ul>
                             
@@ -80,7 +85,7 @@
                     </div>
                     <div class="col-3">
                             <div class="degrees" id="temperature">20
-                                <span class="unit">℃</span>
+                                <span class="units"></span>℃
                             </div>
                                        
                     </div>   
