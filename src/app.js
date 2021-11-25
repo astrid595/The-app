@@ -48,8 +48,8 @@ function formatDate(timestamp) {
         
         <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" 
         alt=""
-        width="20"
-        >
+        width="30"
+        />
         <div class="weather-forecast-temperatures">
             <span class="weather-forecast-temperature-max">
                 ${Math.round(forecastDay.temp.max)}°
