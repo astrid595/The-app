@@ -123,6 +123,24 @@ function formatDate(timestamp) {
   
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", handleSubmit);
+
+
+    function handleCurrent(position) {
+      console.log(position.coords.latitude);
+      console.log(position.coords.longitude);
+    
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
+      axios.get(apiUrl).then(displayTemperature);
+      apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=6f7db97d4508405a35031f006368bb76&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
+    }
+    
+    function currenttemp(event) {
+      event.preventDefault();
+      navigator.geolocation.getCurrentPosition(handleCurrent);
+    }
+    let currentbutton = document.querySelector("#current");
+    currentbutton.addEventListener("click", currenttemp);
   
   search("London");
   
